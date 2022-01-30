@@ -38,7 +38,7 @@ To run the project locally, follow the below steps:
 The following commands will allow you to interact with NEAR CLI and the deployed smart contract's methods:
 
 ### Command to create a new book:
-`near call $CONTRACT newBook '{"bookId": "string","bookName": "string","author": "string","department": "string"}'`
+`near call $CONTRACT newBook '{"bookId": "string","bookName": "string","author": "string","department": "string"}' --account-id <Enter your account id>`
 
 Insert the data in place of "string" mentioned in the command of the method.<br>
 The contract details will be available in the folder named 'neardev'->'dev-account'
@@ -47,7 +47,7 @@ The contract details will be available in the folder named 'neardev'->'dev-accou
 `near view $CONTRACT seeBooks '{}'`
 
 ### Command to query books with ID:
-`near call $CONTRACT queryBook '{"bookID" : "string"}'`
+`near call $CONTRACT queryBook '{"bookID" : "string"}' --account-id <Enter your account id>`
 Insert the ID of the book in place of string in above command. 
 
 ## USAGE:
